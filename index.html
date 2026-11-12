@@ -9,7 +9,7 @@
   var to = '';
   if (repo === 'dr.petit_marketing') to = 'https://clinic.doctorpetit.com/board/';
   else if (repo === 'ondoctor_cosmetics') to = 'https://cosmetics.doctorpetit.com/';
-  else if (repo === 'melaxin-event') to = 'https://event.melaxin.kr/';
+  else if (repo === 'melaxin-event') to = 'https://clinic.melaxin.kr/event/';
   else if (repo === 'share') to = rest.indexOf('melaxin') === 0 ? 'https://clinic.melaxin.kr/share/' : 'https://clinic.doctorpetit.com/share/';
   if (to) location.replace(to + rest + location.search + location.hash);
 })();
