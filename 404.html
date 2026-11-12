@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer"><title>-</title>
+<script>
+(function () {
+  // 옛 주소(github.io/<옛 저장소>/…) → 회사 도메인. 뒤 경로·?·# 그대로
+  var parts = location.pathname.split('/');
+  var repo = parts[1], rest = parts.slice(2).join('/');
+  var to = '';
+  if (repo === 'dr.petit_marketing') to = 'https://clinic.doctorpetit.com/board/';
+  else if (repo === 'ondoctor_cosmetics') to = 'https://cosmetics.doctorpetit.com/';
+  else if (repo === 'melaxin-event') to = 'https://event.melaxin.kr/';
+  else if (repo === 'share') to = rest.indexOf('melaxin') === 0 ? 'https://clinic.melaxin.kr/share/' : 'https://clinic.doctorpetit.com/share/';
+  if (to) location.replace(to + rest + location.search + location.hash);
+})();
+</script></head>
+<body style="margin:0;background:#f3f5f9;font-family:sans-serif;color:#5b6577;display:flex;min-height:100vh;align-items:center;justify-content:center">
+<p>받은 링크 주소를 다시 확인해 주세요.</p></body></html>
